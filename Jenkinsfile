@@ -17,16 +17,14 @@ pipeline {
                 }
             }
         }
-        stages {
-            stage('integration tests') {
-                steps {
-                    nodejs(nodeJSInstallationName: 'nodejs') {
-                        withAWS(credentials: 'AWS-POC') {
-                            sh '''
-                                cd integracion
-                                ./scriptcreds.sh
-                            '''
-                        }
+        stage('integration tests') {
+            steps {
+                nodejs(nodeJSInstallationName: 'nodejs') {
+                    withAWS(credentials: 'AWS-POC') {
+                        sh '''
+                            cd integracion
+                            ./scriptcreds.sh
+                        '''
                     }
                 }
             }
