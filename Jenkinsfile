@@ -1,10 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('Deploy') {
+        stage('build') {
+            steps{
+                nodejs(nodeJSInstallationName: 'nodejs') {
+                    sh 'npm install'
+                }
+            }
+        }
+        stage('deploy') {
             steps {
                 nodejs(nodeJSInstallationName: 'nodejs') {
-                    withAWS(credentials: 'AWS-POC') {
+                    withAWS(credentials: 'aws-credentials') {
                         sh 'serverless deploy'
                     }
                 }
