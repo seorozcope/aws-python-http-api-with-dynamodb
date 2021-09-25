@@ -10,4 +10,4 @@ Feature: This is a test to check if the lambda can become invoking from pipeline
     return true;
   }
   """
-    * assert invokeLambda("curso-DevSecOps") == true
+    * assert invokeLambda("serverless-http-api-dynamodb-seorozcope") == true
