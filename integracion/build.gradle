@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cursodevsecops'
+version '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url "https://repo1.maven.org/maven2/"
+    }
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir file('src/test/java')
+            exclude '**/*UiRunner*.java'
+        }
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
+ext{
+    karateVersion = '0.9.2'
+    cucumberReporting = '5.3.0'
+}
+
+dependencies {
+    testCompile "com.intuit.karate:karate-junit4:$rootProject.ext.karateVersion"
+    testCompile "com.intuit.karate:karate-netty:$rootProject.ext.karateVersion"
+    testCompile "com.intuit.karate:karate-apache:$rootProject.ext.karateVersion"
+    testCompile "net.masterthought:cucumber-reporting:$rootProject.ext.cucumberReporting"
+    testImplementation 'junit:junit:4.12'
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.228')
+    implementation 'com.amazonaws:aws-java-sdk-lambda'
+    implementation 'com.amazonaws:aws-java-sdk-s3'
+}
+
+task credencialesAWS(type: Test) {
+    systemProperty 'accessKey',
+            System.getProperty('accessKey')
+    systemProperty 'secretKey',
+            System.getProperty('secretKey')
+    systemProperty 'sessionToken',
+          System.getProperty('sessionToken')
+}
+
+gradle.startParameter.refreshDependencies = true

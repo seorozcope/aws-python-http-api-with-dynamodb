@@ -1,0 +1,2 @@
+com/cursodevsecops/integracion/features/gatee2e/GateE2ERunner.java
+ com.cursodevsecops.integracion.features.gatee2e.GateE2ERunner

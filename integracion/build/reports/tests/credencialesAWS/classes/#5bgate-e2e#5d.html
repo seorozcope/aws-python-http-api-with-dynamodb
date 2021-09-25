@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class [gate-e2e]</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class [gate-e2e]</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; [gate-e2e]</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.939s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1:3] Check if lambda is called successful</td>
+<td class="success">1.939s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>SOLO DEBE PASAR POR ACA
+20:09:28.242 [Test worker] DEBUG com.amazonaws.AmazonWebServiceClient - Internal logging successfully configured to commons logger: true
+20:09:28.704 [Test worker] DEBUG com.amazonaws.metrics.AwsSdkMetrics - Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+20:09:28.747 [Test worker] DEBUG com.amazonaws.request - Sending Request: POST https://lambda.us-east-1.amazonaws.com /2015-03-31/functions/curso-DevSecOps/invocations Headers: (User-Agent: aws-sdk-java/1.11.228 Linux/5.8.0-59-generic OpenJDK_64-Bit_Server_VM/11.0.11+9-Ubuntu-0ubuntu2.20.04 java/11.0.11, amz-sdk-invocation-id: 244d9af4-3676-01c5-0e4a-24ce01187c46, Content-Type: , ) 
+20:09:28.792 [Test worker] DEBUG com.amazonaws.auth.AWS4Signer - AWS4 Canonical Request: '&quot;POST
+/2015-03-31/functions/curso-DevSecOps/invocations
+
+amz-sdk-invocation-id:244d9af4-3676-01c5-0e4a-24ce01187c46
+amz-sdk-retry:0/0/500
+content-type:
+host:lambda.us-east-1.amazonaws.com
+user-agent:aws-sdk-java/1.11.228 Linux/5.8.0-59-generic OpenJDK_64-Bit_Server_VM/11.0.11+9-Ubuntu-0ubuntu2.20.04 java/11.0.11
+x-amz-date:20210701T010928Z
+x-amz-security-token:IQoJb3JpZ2luX2VjENr//////////wEaCXVzLWVhc3QtMSJGMEQCICCKO4q/HkUdaITuvnlgFhyQn/ivFXJR8sHH1ukgJ626AiB8Yh+Q9iU0efvaT4VrF9JsLCi9uAPxDX8AncaXNbhioyqiAgiy//////////8BEAEaDDMwNjE5MjEwOTk0OCIM1Lr4hf2VCtHliFKMKvYB4CuGOsPx63GXSvdFbq1GUNElix9sNQjpBxrU2QqTGyZzj5mH9nG7msYf4lwF+1w69rsJATpA5yzgyL5tfhjl//jbfjIgYgTc/YHDa81fF16HEnBLJMi91uETa5pgLo7q/iD8pl7kZmqxlEFH3NUqm920TmnGsLpA/As9H6CiTdkfmL8/qjOmbYgL9u6xJPvXLqdP9Byfo1LY7/qiV5PPRF9kkjWHZr4JIJ/fG4fIp6tMt1Ewezy2zFtYF8+t9AeBlGdV3kWgQ/tntySh6hBg/bE+38+xZG47c0bg9McH3IW9T21FcsjX/qQWboNhoQemaZ1wKbKsMIer9IYGOp4Bit+XqgzPEHSsxFEX10uPXBcg2WHheZIX19fosrHLoa3975piNbI04hQIqFayDODJT/7SjMzwoyU8z55Es/IVjO/qnd7aNhhIJWwy8XcwQ2TmVtw/nfE+pqQXvbsLoO9u0rtiFMKkQCWYjx1Cx+bf//B2qjY74deznnxYaAmovYWkBnAHHOU/cFrGiMw4Gzl7MOgifOTVAGi2lugyl6s=
+
+amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-date;x-amz-security-token
+c27621c47458b6ddd5ffb7f8ded92a980ecffb7aa31bbae45b9390022af89e99&quot;
+20:09:28.794 [Test worker] DEBUG com.amazonaws.auth.AWS4Signer - AWS4 String to Sign: '&quot;AWS4-HMAC-SHA256
+20210701T010928Z
+20210701/us-east-1/lambda/aws4_request
+de304a5f2badbc0e35db322f3e480695e71fee7ff591084e64d2dbe937842c16&quot;
+20:09:28.806 [Test worker] DEBUG com.amazonaws.auth.AWS4Signer - Generating a new signing key as the signing key not available in the cache for the date 1625097600000
+20:09:28.822 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+20:09:28.829 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+20:09:28.831 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://lambda.us-east-1.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+20:09:28.845 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}-&gt;https://lambda.us-east-1.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+20:09:28.847 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://lambda.us-east-1.amazonaws.com:443
+20:09:28.871 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to lambda.us-east-1.amazonaws.com/100.25.112.192:443
+20:09:28.871 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - connecting to lambda.us-east-1.amazonaws.com/100.25.112.192:443
+20:09:28.871 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - Connecting socket to lambda.us-east-1.amazonaws.com/100.25.112.192:443 with timeout 10000
+20:09:28.966 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+20:09:28.966 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+20:09:28.967 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+20:09:28.968 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1, TLSv1.3]
+20:09:28.968 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - Starting handshake
+20:09:29.281 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory - Secure session established
+20:09:29.281 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory -  negotiated protocol: TLSv1.2
+20:09:29.282 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+20:09:29.282 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory -  peer principal: CN=lambda.us-east-1.amazonaws.com
+20:09:29.282 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory -  peer alternative names: [lambda.us-east-1.amazonaws.com]
+20:09:29.283 [Test worker] DEBUG com.amazonaws.http.conn.ssl.SdkTLSSocketFactory -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+20:09:29.290 [Test worker] DEBUG com.amazonaws.internal.SdkSSLSocket - created: lambda.us-east-1.amazonaws.com/100.25.112.192:443
+20:09:29.291 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.65:60716&lt;-&gt;100.25.112.192:443
+20:09:29.291 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 50000
+20:09:29.291 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /2015-03-31/functions/curso-DevSecOps/invocations HTTP/1.1
+20:09:29.292 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+20:09:29.295 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; POST /2015-03-31/functions/curso-DevSecOps/invocations HTTP/1.1
+20:09:29.296 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: lambda.us-east-1.amazonaws.com
+20:09:29.296 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Authorization: AWS4-HMAC-SHA256 Credential=ASIAUOSTY2F6DQODYMDE/20210701/us-east-1/lambda/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-date;x-amz-security-token, Signature=1c20dedc0dd579585e994ed94a2221766a1626aa4183a32d91b39cad4a9fa054
+20:09:29.296 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; X-Amz-Date: 20210701T010928Z
+20:09:29.296 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: aws-sdk-java/1.11.228 Linux/5.8.0-59-generic OpenJDK_64-Bit_Server_VM/11.0.11+9-Ubuntu-0ubuntu2.20.04 java/11.0.11
+20:09:29.296 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; X-Amz-Security-Token: IQoJb3JpZ2luX2VjENr//////////wEaCXVzLWVhc3QtMSJGMEQCICCKO4q/HkUdaITuvnlgFhyQn/ivFXJR8sHH1ukgJ626AiB8Yh+Q9iU0efvaT4VrF9JsLCi9uAPxDX8AncaXNbhioyqiAgiy//////////8BEAEaDDMwNjE5MjEwOTk0OCIM1Lr4hf2VCtHliFKMKvYB4CuGOsPx63GXSvdFbq1GUNElix9sNQjpBxrU2QqTGyZzj5mH9nG7msYf4lwF+1w69rsJATpA5yzgyL5tfhjl//jbfjIgYgTc/YHDa81fF16HEnBLJMi91uETa5pgLo7q/iD8pl7kZmqxlEFH3NUqm920TmnGsLpA/As9H6CiTdkfmL8/qjOmbYgL9u6xJPvXLqdP9Byfo1LY7/qiV5PPRF9kkjWHZr4JIJ/fG4fIp6tMt1Ewezy2zFtYF8+t9AeBlGdV3kWgQ/tntySh6hBg/bE+38+xZG47c0bg9McH3IW9T21FcsjX/qQWboNhoQemaZ1wKbKsMIer9IYGOp4Bit+XqgzPEHSsxFEX10uPXBcg2WHheZIX19fosrHLoa3975piNbI04hQIqFayDODJT/7SjMzwoyU8z55Es/IVjO/qnd7aNhhIJWwy8XcwQ2TmVtw/nfE+pqQXvbsLoO9u0rtiFMKkQCWYjx1Cx+bf//B2qjY74deznnxYaAmovYWkBnAHHOU/cFrGiMw4Gzl7MOgifOTVAGi2lugyl6s=
+20:09:29.297 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; amz-sdk-invocation-id: 244d9af4-3676-01c5-0e4a-24ce01187c46
+20:09:29.297 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; amz-sdk-retry: 0/0/500
+20:09:29.297 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Type: 
+20:09:29.297 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Transfer-Encoding: chunked
+20:09:29.297 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+20:09:29.298 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;POST /2015-03-31/functions/curso-DevSecOps/invocations HTTP/1.1[\r][\n]&quot;
+20:09:29.298 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: lambda.us-east-1.amazonaws.com[\r][\n]&quot;
+20:09:29.298 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Authorization: AWS4-HMAC-SHA256 Credential=ASIAUOSTY2F6DQODYMDE/20210701/us-east-1/lambda/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-retry;content-type;host;user-agent;x-amz-date;x-amz-security-token, Signature=1c20dedc0dd579585e994ed94a2221766a1626aa4183a32d91b39cad4a9fa054[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;X-Amz-Date: 20210701T010928Z[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: aws-sdk-java/1.11.228 Linux/5.8.0-59-generic OpenJDK_64-Bit_Server_VM/11.0.11+9-Ubuntu-0ubuntu2.20.04 java/11.0.11[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;X-Amz-Security-Token: IQoJb3JpZ2luX2VjENr//////////wEaCXVzLWVhc3QtMSJGMEQCICCKO4q/HkUdaITuvnlgFhyQn/ivFXJR8sHH1ukgJ626AiB8Yh+Q9iU0efvaT4VrF9JsLCi9uAPxDX8AncaXNbhioyqiAgiy//////////8BEAEaDDMwNjE5MjEwOTk0OCIM1Lr4hf2VCtHliFKMKvYB4CuGOsPx63GXSvdFbq1GUNElix9sNQjpBxrU2QqTGyZzj5mH9nG7msYf4lwF+1w69rsJATpA5yzgyL5tfhjl//jbfjIgYgTc/YHDa81fF16HEnBLJMi91uETa5pgLo7q/iD8pl7kZmqxlEFH3NUqm920TmnGsLpA/As9H6CiTdkfmL8/qjOmbYgL9u6xJPvXLqdP9Byfo1LY7/qiV5PPRF9kkjWHZr4JIJ/fG4fIp6tMt1Ewezy2zFtYF8+t9AeBlGdV3kWgQ/tntySh6hBg/bE+38+xZG47c0bg9McH3IW9T21FcsjX/qQWboNhoQemaZ1wKbKsMIer9IYGOp4Bit+XqgzPEHSsxFEX10uPXBcg2WHheZIX19fosrHLoa3975piNbI04hQIqFayDODJT/7SjMzwoyU8z55Es/IVjO/qnd7aNhhIJWwy8XcwQ2TmVtw/nfE+pqQXvbsLoO9u0rtiFMKkQCWYjx1Cx+bf//B2qjY74deznnxYaAmovYWkBnAHHOU/cFrGiMw4Gzl7MOgifOTVAGi2lugyl6s=[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;amz-sdk-invocation-id: 244d9af4-3676-01c5-0e4a-24ce01187c46[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;amz-sdk-retry: 0/0/500[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Type: [\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+20:09:29.299 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;96[\r][\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;{[\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &quot;reg01&quot;:&quot;ABCDE&quot;,[\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &quot;reg02&quot;:&quot;12345678&quot;,[\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &quot;reg03&quot;:&quot;efghik&quot;,[\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &quot;ip&quot;:&quot;10.10.10.1&quot;,[\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &quot;action&quot;:&quot;add&quot;,[\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[0x9]   &quot;cuenta&quot;:&quot;9876543210&quot; [\n]&quot;
+20:09:29.300 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;}[\r][\n]&quot;
+20:09:29.301 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;0[\r][\n]&quot;
+20:09:29.301 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+20:09:29.703 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+20:09:29.704 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Thu, 01 Jul 2021 01:09:29 GMT[\r][\n]&quot;
+20:09:29.704 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/json[\r][\n]&quot;
+20:09:29.704 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Length: 53[\r][\n]&quot;
+20:09:29.705 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+20:09:29.705 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;x-amzn-RequestId: 3dc7fa4b-d8ca-4c01-bd6d-3884126ff9a8[\r][\n]&quot;
+20:09:29.706 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;x-amzn-Remapped-Content-Length: 0[\r][\n]&quot;
+20:09:29.706 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Amz-Executed-Version: $LATEST[\r][\n]&quot;
+20:09:29.706 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Amzn-Trace-Id: root=1-60dd15c9-2dccc093546541d728876a5a;sampled=0[\r][\n]&quot;
+20:09:29.706 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+20:09:29.712 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+20:09:29.713 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Thu, 01 Jul 2021 01:09:29 GMT
+20:09:29.713 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/json
+20:09:29.714 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Length: 53
+20:09:29.714 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Connection: keep-alive
+20:09:29.714 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; x-amzn-RequestId: 3dc7fa4b-d8ca-4c01-bd6d-3884126ff9a8
+20:09:29.715 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; x-amzn-Remapped-Content-Length: 0
+20:09:29.715 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Amz-Executed-Version: $LATEST
+20:09:29.715 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Amzn-Trace-Id: root=1-60dd15c9-2dccc093546541d728876a5a;sampled=0
+20:09:29.719 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive for 60000 MILLISECONDS
+20:09:29.722 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;{&quot;statusCode&quot;: 200, &quot;body&quot;: &quot;\&quot;Hello from Lambda!\&quot;&quot;}&quot;
+20:09:29.724 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}-&gt;https://lambda.us-east-1.amazonaws.com:443] can be kept alive for 60.0 seconds
+20:09:29.724 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+20:09:29.724 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}-&gt;https://lambda.us-east-1.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+20:09:29.726 [Test worker] DEBUG com.amazonaws.request - Received successful response: 200, AWS Request ID: 3dc7fa4b-d8ca-4c01-bd6d-3884126ff9a8
+20:09:29.726 [Test worker] DEBUG com.amazonaws.requestId - x-amzn-RequestId: 3dc7fa4b-d8ca-4c01-bd6d-3884126ff9a8
+200
+{&quot;statusCode&quot;: 200, &quot;body&quot;: &quot;\&quot;Hello from Lambda!\&quot;&quot;}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.5.1</a> at Jun 30, 2021, 8:09:30 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+com/cursodevsecops/integracion/utils/aws/services/S3.java
+ com.cursodevsecops.integracion.utils.aws.services.S3
+com/cursodevsecops/integracion/utils/aws/sessioncredentials/gradle/Token.java
+ com.cursodevsecops.integracion.utils.aws.sessioncredentials.gradle.Token
+com/cursodevsecops/integracion/features/gatee2e/GateE2E.java
+ com.cursodevsecops.integracion.features.gatee2e.GateE2E
+com/cursodevsecops/integracion/utils/aws/sessioncredentials/SessionCredential.java
+ com.cursodevsecops.integracion.utils.aws.sessioncredentials.SessionCredential
+com/cursodevsecops/integracion/utils/aws/sessioncredentials/gradle/Basic.java
+ com.cursodevsecops.integracion.utils.aws.sessioncredentials.gradle.Basic
+com/cursodevsecops/integracion/utils/aws/services/Lambda.java
+ com.cursodevsecops.integracion.utils.aws.services.Lambda
+com/cursodevsecops/integracion/utils/aws/services/Service.java
+ com.cursodevsecops.integracion.utils.aws.services.Service

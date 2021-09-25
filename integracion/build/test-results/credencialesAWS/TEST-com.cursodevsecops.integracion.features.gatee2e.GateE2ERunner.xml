@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cursodevsecops.integracion.features.gatee2e.GateE2ERunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="cajecasu-laptop" time="0.0">
+  <properties/>
+  <system-out><![CDATA[20:09:27.793 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+---------------------------------------------------------
+feature: classpath:com/cursodevsecops/integracion/features/gatee2e/gate-e2e.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1.9185
+---------------------------------------------------------
+HTML report: (paste into browser to view) | Karate version: 0.9.2
+file:/home/cajecasu/Documents/practicas/hello-serverless/integracion/build/surefire-reports/com.cursodevsecops.integracion.features.gatee2e.gate-e2e.html
+---------------------------------------------------------
+
+]]></system-out>
+  <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
+]]></system-err>
+</testsuite>
